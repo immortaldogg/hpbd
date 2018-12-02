@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  background: #020202;
+  cursor: crosshair;
+}
+canvas{display:block}
+h1 {
+  position: absolute;
+  top: 31%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  /* font-family: "Source Sans Pro"; */
+  font-family: 'Bungee', cursive;
+  font-size: 4em;
+  font-weight: 900;
+  -webkit-user-select: none;
+  user-select: none;
+
+  width: -moz-max-content;
+  width: max-content;
+}
+h2 {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 5em;
+  font-weight: 900;
+  -webkit-user-select: none;
+  user-select: none;
+
+  width: -moz-max-content;
+  width: max-content;
+}
+
+@-moz-keyframes fout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fin {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fout 1.5s;
+}
+
+.hid {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fin 1.5s;
+}
+
+#name {
+  margin-top: 5rem;
+  font-size: 2.9rem;
+}
+
+/* Red 	Orange 	Yellow 	Green 	Blue 	Indigo 	Violet */
+@-moz-keyframes blink {
+  0% {
+    color: red;
+  }
+  /* Adding a step in the middle */
+  14% {
+    color: orange;
+  }
+  28% {
+    color: yellow;
+  }
+  42% {
+    color: green;
+  }
+  56% {
+    color: blue;
+  }
+  70% {
+    color: indigo;
+  }
+  84% {
+    color: violet;
+  }
+  92% {
+    color: white;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+  }
+}
+
+@-moz-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+/* .blinking {
+  -moz-animation: blink 5s;  
+  animation-iteration-count: infinite;
+} */
+
+.glowing {
+  -moz-animation: neon2 2s 2 alternate;  
+  animation-iteration-count: infinite;
+}
+
+@-moz-keyframes samasama {
+  0% {
+    margin-top: 5rem;
+    font-size: 2.9rem;    
+  }
+  /* Adding a step in the middle */
+  50% {
+    margin-top: 5rem;
+    font-size: 3rem;
+  }
+  100% {
+    margin-top: 5rem;
+    font-size: 2.9rem;
+  }
+}
+
+.sama {
+  -moz-animation: samasama 1s;  
+  animation-iteration-count: infinite;
+}
+
+.underneath {
+  width: 5rem;
+  height: auto;
+  position: absolute;
+  bottom: -50%;
+  overflow: hidden;
+  display: none;
+
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+#leftDrum {
+  left: 0%;
+}
+
+#rightDrum {
+  right: 0%;
+}
+
+@-moz-keyframes goup {
+  from {
+    bottom: -50%;
+  }
+  to {
+    bottom: 5%;
+  }
+}
+
+.go-up {
+  width: 5rem;
+  height: auto;
+  position: absolute;
+  animation: goup 3s;
+  bottom: 5%;
+
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+#topBanner {
+  top: 0%;
+}
+
+.above {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: -50%;
+  overflow: hidden;
+  display: none;
+
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+@-moz-keyframes godown {
+  from {
+    top: -50%;
+  }
+  to {
+    top: 0%;
+  }
+}
+
+.go-down {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  animation: godown 3s;
+  top: 0%;
+
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
