@@ -36,7 +36,7 @@ h2 {
   width: max-content;
 }
 
-@-moz-keyframes fout {
+@keyframes fout {
   from {
     opacity: 1;
   }
@@ -45,7 +45,7 @@ h2 {
   }
 }
 
-@-moz-keyframes fin {
+@keyframes fin {
   from {
     opacity: 0;
   }
@@ -72,7 +72,7 @@ h2 {
 }
 
 /* Red 	Orange 	Yellow 	Green 	Blue 	Indigo 	Violet */
-@-moz-keyframes blink {
+@keyframes blink {
   0% {
     color: red;
   }
@@ -101,7 +101,7 @@ h2 {
   }
 }
 
-@-moz-keyframes neon2 {
+@keyframes neon2 {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
   }
@@ -116,11 +116,11 @@ h2 {
 } */
 
 .glowing {
-  -moz-animation: neon2 2s 2 alternate;  
+  animation: neon2 2s 2 alternate;  
   animation-iteration-count: infinite;
 }
 
-@-moz-keyframes samasama {
+@keyframes samasama {
   0% {
     margin-top: 5rem;
     font-size: 2.9rem;    
@@ -137,7 +137,7 @@ h2 {
 }
 
 .sama {
-  -moz-animation: samasama 1s;  
+  animation: samasama 1s;  
   animation-iteration-count: infinite;
 }
 
@@ -161,7 +161,7 @@ h2 {
   right: 0%;
 }
 
-@-moz-keyframes goup {
+@keyframes goup {
   from {
     bottom: -50%;
   }
@@ -197,7 +197,7 @@ h2 {
   margin: 0px 0px;
 }
 
-@-moz-keyframes godown {
+@keyframes godown {
   from {
     top: -50%;
   }
