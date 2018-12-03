@@ -260,7 +260,7 @@ setTimeout(()=> {
 }, 16225)
 
 setTimeout(()=> {
-  document.getElementById("name").textContent = "Happy Birthday To Linh"
+  document.getElementById("name").textContent = "Happy Birthday To Mr.Linh"
   document.getElementById("name").classList.remove("sama")
   document.getElementById("name").classList.add("fade-out")
 }, 16887)
